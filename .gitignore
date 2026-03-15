@@ -1,0 +1,36 @@
+# Build outputs
+bin/
+obj/
+target/
+out/
+
+# Eclipse
+.classpath
+.project
+.settings/
+*.launch
+
+# IntelliJ IDEA
+.idea/
+*.iml
+*.ipr
+*.iws
+
+# VS Code
+.vscode/
+.history/
+
+# Environment & configs
+.env
+*.local
+
+# Other common ignores
+*.swp
+*.swo
+
+# OS-specific files
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
