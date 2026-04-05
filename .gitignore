@@ -4,12 +4,6 @@ obj/
 target/
 out/
 
-# Eclipse
-.classpath
-.project
-.settings/
-*.launch
-
 # IntelliJ IDEA
 .idea/
 *.iml
