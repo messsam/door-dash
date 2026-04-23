@@ -1,16 +1,17 @@
 package game.engine.cards;
 
 public abstract class Card {
-	private final String name, description;
-	private final int rarity;
-	private final boolean lucky;
-
-    public Card(String name, String description, int rarity, boolean lucky) {
-        this.name = name;
-        this.description = description;
-        this.rarity = rarity;
-        this.lucky = lucky;
-    }
+	private String name, description;
+	private int rarity;
+	private boolean lucky;
+	
+	public Card(String name, String description, int rarity, boolean lucky) {
+		super();
+		this.name = name;
+		this.description = description;
+		this.rarity = rarity;
+		this.lucky = lucky;
+	}
 
 	public String getName() { return name; }
 	public String getDescription() { return description; }

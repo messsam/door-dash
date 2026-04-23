@@ -1,22 +1,23 @@
 package game.engine;
 
 import java.util.ArrayList;
-import game.engine.cells.Cell;
+
 import game.engine.cards.Card;
+import game.engine.cells.*;
 import game.engine.monsters.Monster;
 
 public class Board {
-    private final Cell[][] boardCells;
-    private static ArrayList<Monster> stationedMonsters;
-    private static ArrayList<Card> originalCards;
-    public static ArrayList<Card> cards;
-
-    public Board(ArrayList<Card> readCards) {
-        boardCells = new Cell[Constants.BOARD_ROWS][Constants.BOARD_COLS];
-        stationedMonsters = new ArrayList<>();
-        cards = new ArrayList<>();
-        originalCards = readCards;
-    }
+	private Cell[][] boardCells;
+	private static ArrayList<Monster> stationedMonsters; 
+	private static ArrayList<Card> originalCards;
+	public static ArrayList<Card> cards;
+	
+	public Board(ArrayList<Card> readCards) {
+		boardCells = new Cell[Constants.BOARD_ROWS][Constants.BOARD_COLS];
+		stationedMonsters = new ArrayList<Monster>();
+		cards = new ArrayList<Card>();
+		originalCards = readCards;
+	}
 
     public Cell[][] getBoardCells() { return boardCells; }
     public static ArrayList<Monster> getStationedMonsters() { return stationedMonsters; }
